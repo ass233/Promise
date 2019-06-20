@@ -12,6 +12,10 @@ let p1 = new MyPromise(function(resolve,reject){
 
 p1.then(function(data){
     console.log(data);
-},function(err){
-    console.log(err)
+},function(reason){
+    console.log(reason)
+}).then(function(data){
+    console.log(data)
+},function(reason){
+    console.log(reason)
 });
